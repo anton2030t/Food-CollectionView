@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCell" customModule="Shop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="227" height="276"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="227" height="276"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i1R-c9-TMw">
+                        <rect key="frame" x="0.0" y="0.0" width="227" height="276"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </tableView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="i1R-c9-TMw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IEX-qa-S2Y"/>
+                <constraint firstAttribute="trailing" secondItem="i1R-c9-TMw" secondAttribute="trailing" id="eL5-8C-NVY"/>
+                <constraint firstItem="i1R-c9-TMw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iwh-mv-aVU"/>
+                <constraint firstAttribute="bottom" secondItem="i1R-c9-TMw" secondAttribute="bottom" id="oa9-ad-kQ2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="227" height="276"/>
+            <connections>
+                <outlet property="tableView" destination="i1R-c9-TMw" id="u30-Or-oYN"/>
+            </connections>
+            <point key="canvasLocation" x="110.86956521739131" y="131.91964285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
